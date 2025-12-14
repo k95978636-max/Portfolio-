@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holi | Resume Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #f1f5f9;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    /* ===== Login Protection ===== */
+    header, section, footer { display: none; }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #2563eb;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      color: #1e3a8a;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #475569;
+    }
+
+    .contact {
+      text-align: right;
+      font-size: 14px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #1e40af;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #1e3a8a;
+      padding: 8px 14px;
+      margin: 6px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .project {
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+  <div style="display:flex; align-items:center; gap:20px;">
+    <img src="profile.jpg" alt="Srijan Photo" style="width:120px; height:120px; border-radius:50%; object-fit:cover; border:4px solid #2563eb;" />
+    <div>
+      <h1>holi</h1>
+      <p>Computer Science and AIML Student | Aspiring Java Developer</p>
+    </div>
+  </div>
+  <div class="contact">
+    <p>Email: holi123@gmail.com</p>
+    <p>GitHub: github.com</p>
+    <p>LinkedIn: linkedin.com</p>
+  </div>
+</header>
+
+<section>
+  <h2>Career Objective</h2>
+  <p>
+    Motivated Computer Science student seeking opportunities to apply Java
+    programming and Object-Oriented concepts in real-world applications and
+    enhance my technical and problem-solving skills.
+  </p>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <ul>
+    <li>
+      <strong>Bachelor of Computer Science</strong><br />
+      Parul institute of engineering and technology<br />
+      2025 – 2029
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>Java</span>
+    <span>Object-Oriented Programming</span>
+    <span>DBMS</span>
+    <span>MySQL</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript (Basic)</span>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="project">
+    <strong>Student Management System (Java)</strong>
+    <ul>
+      <li>Developed using Core Java and OOP principles</li>
+      <li>Performed CRUD operations on student records</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <strong>Library Management System (Java)</strong>
+    <ul>
+      <li>Console-based Java application</li>
+      <li>Managed book and user data efficiently</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Strengths</h2>
+  <ul>
+    <li>Strong understanding of Java and OOP concepts</li>
+    <li>Quick learner with analytical thinking</li>
+    <li>Good communication and teamwork skills</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Declaration</h2>
+  <p>
+    I hereby declare that the information provided above is true and correct
+    to the best of my knowledge.
+  </p>
+</section>
+
+<footer>
+  © 2025 Holi | Resume-Based Portfolio Project
+</footer>
+
+</div>
+
+<script>
+  /* Login Check (No Logout Section) */
+  if (localStorage.getItem('isLoggedIn') !== 'true') {
+    window.location.href = 'login.html';
+  } else {
+    document.querySelectorAll('header, section, footer').forEach(el => el.style.display = 'block');
+  }
+</script>
+
+</body>
+</html>
