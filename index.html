@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Holi | Resume Portfolio</title>
+  <title>Holi Beauty | Resume Portfolio</title>
+
   <style>
     * {
       margin: 0;
@@ -18,7 +19,7 @@
       line-height: 1.6;
     }
 
-    /* ===== Login Protection ===== */
+    /* Login Protection */
     header, section, footer { display: none; }
 
     .container {
@@ -88,20 +89,31 @@
     }
   </style>
 </head>
+
 <body>
 
 <div class="container">
 
 <header>
   <div style="display:flex; align-items:center; gap:20px;">
-    <img src="profile.jpg" alt="Srijan Photo" style="width:120px; height:120px; border-radius:50%; object-fit:cover; border:4px solid #2563eb;" />
+    <img src="profile.jpg"
+         alt="Holi Buty Photo"
+         style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid #2563eb;">
     <div>
-      <h1>holi</h1>
-      <p>Computer Science and AIML Student | Aspiring Java Developer</p>
+      <h1>Holi Beauty</h1>
+      <p>
+        Computer Science and AIML Student | Aspiring Java Developer<br>
+        <strong>Age:</strong> 18 |
+        <strong>DOB:</strong> 17-02-2004 |
+        <strong>Gender:</strong> Female<br>
+        <strong>Address:</strong> Patna, Bihar
+      </p>
     </div>
   </div>
+
   <div class="contact">
-    <p>Email: holi123@gmail.com</p>
+    <p><strong>Contact:</strong> 9142433755</p>
+    <p><strong>Email:</strong> holi.buty@gmail.com</p>
     <p>GitHub: github.com</p>
     <p>LinkedIn: linkedin.com</p>
   </div>
@@ -110,7 +122,7 @@
 <section>
   <h2>Career Objective</h2>
   <p>
-    Motivated Computer Science student seeking opportunities to apply Java
+    Motivated Computer Science and AIML student seeking opportunities to apply Java
     programming and Object-Oriented concepts in real-world applications and
     enhance my technical and problem-solving skills.
   </p>
@@ -120,8 +132,8 @@
   <h2>Education</h2>
   <ul>
     <li>
-      <strong>Bachelor of Computer Science</strong><br />
-      Parul institute of engineering and technology<br />
+      <strong>Bachelor of Computer Science and Engineering</strong><br>
+      Parul Institute of Engineering and Technology<br>
       2025 – 2029
     </li>
   </ul>
@@ -177,7 +189,7 @@
 </section>
 
 <footer>
-  © 2025 Holi | Resume-Based Portfolio Project
+  © 2025 Holi Buty | Resume-Based Portfolio Project
 </footer>
 
 </div>
@@ -187,9 +199,12 @@
   if (localStorage.getItem('isLoggedIn') !== 'true') {
     window.location.href = 'login.html';
   } else {
-    document.querySelectorAll('header, section, footer').forEach(el => el.style.display = 'block');
+    document.querySelectorAll('header, section, footer')
+      .forEach(el => el.style.display = 'block');
   }
 </script>
 
 </body>
 </html>
+
+
